@@ -1,5 +1,6 @@
 class Basket{
     constructor(){
+        this._priceList = {'NewYork': 2.49, 'London': 3.00, 'Paris': 2.00}
         this._basket = [];
         this._capacity;
     }
@@ -36,6 +37,16 @@ class Basket{
         else
             this._capacity = this._capacity*2
             return 'Capacity Doubled'
+    }
+
+    singlePrice(input){
+        return this._priceList[input]
+    }
+
+    totalPriceOfBasket(){
+        let totalPrice = 0
+        this._basket.forEach(element => totalPrice += this.singlePrice(element))
+        return totalPrice
     }
 }
 module.exports = Basket

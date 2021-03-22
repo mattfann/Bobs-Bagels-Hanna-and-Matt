@@ -6,7 +6,7 @@ let testFrameworkForArray = new AssertEqualsForArray()
 
 SourceCode = require('./sourcecode.js')
 
-// 1. Set up
+
 let basket = new SourceCode()
 basket._capacity = 3
 let expectedOutput = 3
