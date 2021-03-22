@@ -4,7 +4,7 @@ let testFramework = new AssertEquals()
 AssertEqualsForArray = require('./test-framework-for-array.js')
 let testFrameworkForArray = new AssertEqualsForArray()
 
-SourceCode = require('./sourcecode.js')
+SourceCode = require('../sourcecode.js')
 
 
 // 1. Set up

@@ -2,18 +2,17 @@ class Basket{
     constructor(){
         this._priceList = {'NewYork': 2.49, 'London': 3.00, 'Paris': 2.00}
         this._basket = [];
-        this._capacity;
+        this._capacity = 5;
     }
     addToBasket(item){
         if(this._basket.length >= this._capacity){
             return 'Basket is full!'
         }
         if(this._basket.includes(item) === true){
-            this._basket.push(item)
-           return 'Bagel already in basket 1 time(s). Bagel added again so now in basket 2 times?'
+            return this._basket.push(item) && 'Bagel already in basket. Bagel added again'
         } 
         else{
-        return this._basket.push(item)
+            return this._basket.push(item)
         }
     }
 
@@ -30,13 +29,13 @@ class Basket{
         
     }
 
-    enlargeBasketCapacity(){
+    changeCapacity(number){
         if (this._basket.length < this._capacity){
             return 'Basket is not full!'
         }
         else
-            this._capacity = this._capacity*2
-            return 'Capacity Doubled'
+            this._capacity = number
+            return `Capacity changed to ${number}`
     }
 
     singlePrice(input){

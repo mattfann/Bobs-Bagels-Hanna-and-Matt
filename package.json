@@ -1,0 +1,22 @@
+{
+  "name": "domain-model-exercise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sourcecode.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattfann/Bobs-Bagels-Hanna-and-Matt.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mattfann/Bobs-Bagels-Hanna-and-Matt/issues"
+  },
+  "homepage": "https://github.com/mattfann/Bobs-Bagels-Hanna-and-Matt#readme",
+  "dependencies": {
+    "jasmine": "^3.7.0"
+  }
+}
